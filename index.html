@@ -1,0 +1,557 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAM'S BATTLEGROUND</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="MAMS_BATTLEGROUND.css">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-main">
+            <div class="header-title">
+                <h1>MAM'S BATTLEGROUND</h1>
+                <h2>Play. Build. Battle.</h2>
+            </div>
+
+            <a href="THE websiteee.html" class="shop-logo" title="Return to homepage">
+                <img src="ibon.png" alt="MAM'S BATTLEGROUND Logo">
+            </a>
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#rental">PC Rental</a>
+            <a href="#components">Computer Components</a>
+            <a href="#services">Other Services</a>
+            <a href="#rates">Rental Rates</a>
+            <a href="#contact">Contact</a>
+            <a href="#authors">Authors</a>
+            <a href="#cart">Shopping Cart</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="home" class="reveal">
+            <div class="hero-content">
+
+                <div class="hero-text">
+                    <p class="hero-label">WELCOME TO THE BATTLEGROUND</p>
+
+                    <h2>MAM'S BATTLEGROUND</h2>
+
+                    <h3>Play. Build. Battle.</h3>
+
+                    <p>
+                        Your place for gaming, computer rentals, and tech essentials.
+                        Enjoy reliable computer units, explore computer components,
+                        and take a break with our available food and drinks.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a class="action-button" href="#rental">
+                            Explore PC Rentals
+                        </a>
+
+                        <a class="action-button secondary-button" href="#components">
+                            Explore Components
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <img src="logo.png" alt="MAM'S BATTLEGROUND">
+                </div>
+
+            </div>
+        </section>
+
+        <section id="about" class="reveal">
+            <h2>About Us</h2>
+
+            <p>
+                MAM'S BATTLEGROUND provides computer rental services
+                where customers can use computers for a specific
+                amount of time. The shop also sells computer components
+                and offers food and drinks for its customers.
+            </p>
+
+            <img src="interior.png" alt="Interior of MAM'S BATTLEGROUND">
+        </section>
+
+        <section id="rental" class="reveal">
+            <h2>Computer Rental</h2>
+
+            <p>
+                Customers can rent computers and use them for their
+                preferred activities within the available rental time.
+            </p>
+
+            <h3>Available Computers</h3>
+
+            <div class="computer-grid">
+
+                <div class="computer-card">
+                    <img src="computers.png" alt="Regular PC">
+
+                    <div class="computer-info">
+                        <h3>Computer 1 - Regular PC</h3>
+                        <p class="computer-type">Regular Gaming Computer</p>
+
+                        <details>
+                            <summary>View Specifications</summary>
+                            <div class="computer-details">
+                                <p>Built for speed, comfort, and reliability.</p>
+                                <ul>
+                                    <li>Full HD display</li>
+                                    <li>Responsive mechanical keyboard and mouse</li>
+                                    <li>Pondo Cloud Billing System</li>
+                                    <li>Suitable for gaming, schoolwork, browsing, printing, and online tasks</li>
+                                </ul>
+                            </div>
+                        </details>
+
+                        <p class="computer-rate">See rental rates below</p>
+                    </div>
+                </div>
+
+                <div class="computer-card">
+                    <img src="computers.png" alt="VIP PC">
+
+                    <div class="computer-info">
+                        <h3>Computer 2 - VIP PC</h3>
+                        <p class="computer-type">VIP Gaming Computer</p>
+
+                        <details>
+                            <summary>View Specifications</summary>
+                            <div class="computer-details">
+                                <p>Step up your experience with our VIP unit.</p>
+                                <ul>
+                                    <li>Bigger HD monitor</li>
+                                    <li>Higher computer specifications</li>
+                                    <li>Pondo Cloud Billing System</li>
+                                    <li>Designed for smoother gaming and multitasking</li>
+                                </ul>
+                            </div>
+                        </details>
+
+                        <p class="computer-rate">See rental rates below</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="calculator">
+                <h3>PC Rental Calculator</h3>
+
+                <p>Select your computer and rental duration to calculate
+                    your estimated payment.</p>
+
+                <label for="computerType">Computer Type:</label>
+                <select id="computerType">
+                    <option value="regular">Regular PC</option>
+                    <option value="vip">VIP PC</option>
+                </select>
+
+                <label for="rentalDuration">Rental Duration:</label>
+                <select id="rentalDuration">
+                    <option value="1">1 Hour</option>
+                    <option value="2">2 Hours</option>
+                    <option value="4">4 Hours</option>
+                    <option value="8">8 Hours</option>
+                    <option value="10">10 Hours</option>
+                    <option value="20">20 Hours</option>
+                </select>
+
+                <button type="button" id="calculateRental" class="action-button">
+                    Calculate Payment
+                </button>
+
+                <div id="rentalResult" class="result" aria-live="polite">
+                    Select your rental options to see the total.
+                </div>
+            </div>
+        </section>
+
+        <section id="components" class="reveal">
+            <h2>Computer Components</h2>
+
+            <p>
+                MAM'S BATTLEGROUND also offers computer components
+                and parts used in its rental computers.
+            </p>
+
+            <p class="instruction">
+                Click "View Details" to see product information or
+                "Add to Cart" to add an item to your shopping cart.
+            </p>
+
+            <div id="productTable" class="component-grid">
+
+                <div class="product-row component-card"
+                     data-name="HP Z24i 24-Inch IPS Monitor"
+                     data-price="2200"
+                     data-image="monitor.png">
+
+                    <img src="monitor.png" alt="HP Monitor">
+
+                    <div class="component-info">
+                        <h3>HP Z24i 24-Inch IPS Monitor</h3>
+                        <p class="component-price">₱2,200</p>
+
+                        <details>
+                            <summary>View Specifications</summary>
+                            <ul>
+                                <li>Brand: HP</li>
+                                <li>Model: Z24i</li>
+                                <li>Screen Size: 24 inches</li>
+                                <li>Display: IPS LCD with LED backlight</li>
+                                <li>Resolution: 1920 × 1200 (WUXGA)</li>
+                                <li>Refresh Rate: 60Hz</li>
+                                <li>Brightness: 300 cd/m²</li>
+                                <li>Contrast Ratio: 1000:1</li>
+                                <li>Response Time: 8ms</li>
+                            </ul>
+                        </details>
+
+                        <button type="button" class="action-button add-to-cart">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-row component-card"
+                     data-name="Redragon Dark Avenger V3 Mechanical Gaming Keyboard"
+                     data-price="1540"
+                     data-image="redragon.jpg">
+
+                    <img src="redragon.jpg" alt="Gaming Keyboard">
+
+                    <div class="component-info">
+                        <h3>Redragon Dark Avenger V3</h3>
+                        <p class="component-price">₱1,540</p>
+
+                        <details>
+                            <summary>View Specifications</summary>
+                            <ul>
+                                <li>Mechanical Gaming Keyboard</li>
+                                <li>RGB Backlighting</li>
+                                <li>Mechanical Outemu Switches</li>
+                                <li>Compact Tenkeyless Design</li>
+                                <li>19 RGB Lighting Modes</li>
+                                <li>100% Anti-Ghosting</li>
+                                <li>12 Multimedia Function Keys</li>
+                                <li>Removable Switches</li>
+                                <li>Wired USB Connection</li>
+                            </ul>
+                        </details>
+
+                        <button type="button" class="action-button add-to-cart">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-row component-card"
+                     data-name="Badwolf Aura RGB Gaming Headset"
+                     data-price="450"
+                     data-image="headset.jpg">
+
+                    <img src="headset.jpg" alt="Gaming Headset">
+
+                    <div class="component-info">
+                        <h3>Badwolf Aura RGB Gaming Headset</h3>
+                        <p class="component-price">₱450</p>
+
+                        <details>
+                            <summary>View Specifications</summary>
+                            <ul>
+                                <li>Brand: Badwolf</li>
+                                <li>Model: Aura RGB</li>
+                                <li>Type: Wired Over-Ear Gaming Headset</li>
+                                <li>Audio: Stereo Sound</li>
+                                <li>Speaker Driver: 40 mm</li>
+                                <li>Microphone: Built-in microphone</li>
+                                <li>Lighting: RGB/LED lighting</li>
+                            </ul>
+                        </details>
+
+                        <button type="button" class="action-button add-to-cart">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-row component-card"
+                     data-name="Neutron Colt Desktop PC Tower"
+                     data-price="1200"
+                     data-image="casing.png">
+
+                    <img src="casing.png" alt="Neutron Colt PC Tower">
+
+                    <div class="component-info">
+                        <h3>Neutron Colt Desktop PC Tower</h3>
+                        <p class="component-price">₱1,200</p>
+
+                        <details>
+                            <summary>View Specifications</summary>
+                            <ul>
+                                <li>Brand: Neutron</li>
+                                <li>Model: Colt</li>
+                                <li>Type: Desktop PC Tower / Computer Casing</li>
+                                <li>Color: Black with Blue LED Accents</li>
+                                <li>Power Supply: 700W (depending on version)</li>
+                                <li>Purpose: Houses and protects computer components</li>
+                                <li>Features: Blue LED lighting and ventilation</li>
+                            </ul>
+                        </details>
+
+                        <button type="button" class="action-button add-to-cart">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-row component-card"
+                     data-name="MAM'S Gaming Chair"
+                     data-price="1500"
+                     data-image="chair.png">
+
+                    <img src="chair.png" alt="Gaming Chair">
+
+                    <div class="component-info">
+                        <h3>MAM'S Gaming Chair</h3>
+                        <p class="component-price">₱1,500</p>
+
+                        <details>
+                            <summary>View Specifications</summary>
+                            <ul>
+                                <li>Material: Synthetic leather or fabric</li>
+                                <li>Frame: Metal or reinforced frame</li>
+                                <li>Adjustability: Fixed height</li>
+                                <li>Base: Stationary base without wheels</li>
+                                <li>Features: Cushioned seat and backrest</li>
+                            </ul>
+                        </details>
+
+                        <button type="button" class="action-button add-to-cart">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <div id="productModal" class="modal" aria-hidden="true">
+            <div class="modal-content">
+                <button type="button" id="closeModal" class="close-button"
+                    aria-label="Close product details">&times;</button>
+
+                <img id="modalImage" src="" alt="Product image">
+
+                <h2 id="modalName">Product Name</h2>
+
+                <div id="modalDescription"></div>
+
+                <p id="modalPrice" class="modal-price"></p>
+
+                <button type="button" id="modalAddToCart" class="action-button">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+        <section id="services" class="reveal">
+            <h2>Other Services</h2>
+
+            <p>
+                Customers can also enjoy food and drinks while
+                spending time at MAM'S BATTLEGROUND.
+            </p>
+
+            <div class="services-row">
+                <div class="service-item">
+                    <img src="foods.jpg" alt="Food Items">
+                </div>
+
+                <div class="service-item">
+                    <img src="coffee.jpg" alt="Available Coffee">
+                </div>
+
+                <div class="service-item">
+                    <img src="piso wifi.png" alt="Piso WiFi">
+                </div>
+            </div>
+        </section>
+
+        <section id="rates" class="reveal">
+            <h2>Computer Rental Rates</h2>
+
+            <p>
+                Check the available rental durations and prices
+                for using the computers.
+            </p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rental Duration</th>
+                        <th>Regular PC Price</th>
+                        <th>VIP Price</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>1 Hour</td>
+                        <td>₱20</td>
+                        <td>₱50</td>
+                    </tr>
+
+                    <tr>
+                        <td>2 Hours</td>
+                        <td>₱40</td>
+                        <td>₱95</td>
+                    </tr>
+
+                    <tr>
+                        <td>4 Hours</td>
+                        <td>₱75</td>
+                        <td>₱160</td>
+                    </tr>
+
+                    <tr>
+                        <td>8 Hours</td>
+                        <td>₱150</td>
+                        <td>₱280</td>
+                    </tr>
+
+                    <tr>
+                        <td>10 Hours</td>
+                        <td>₱180</td>
+                        <td>₱300</td>
+                    </tr>
+
+                    <tr>
+                        <td>20 Hours</td>
+                        <td>₱350</td>
+                        <td>₱600</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="cart" class="reveal">
+            <h2>Shopping Cart</h2>
+
+            <p>Review the computer components you have selected.</p>
+
+            <div class="cart-container">
+                <table id="cartTable">
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Subtotal</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="cartItems">
+                        <tr>
+                            <td colspan="5" class="empty-cart">
+                                Your cart is currently empty.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="cart-total">
+                    <h3>Total: <span id="cartTotal">₱0.00</span></h3>
+
+                    <button type="button" id="clearCart" class="action-button">
+                        Clear Cart
+                    </button>
+                </div>
+
+                <p id="cartMessage" class="result" aria-live="polite"></p>
+            </div>
+        </section>
+
+        <section id="contact" class="reveal">
+            <h2>Contact Us</h2>
+
+            <p>
+                For inquiries about computer rentals,
+                computer components, food, and drinks,
+                you may contact or visit MAM'S BATTLEGROUND.
+            </p>
+
+            <p>Address: 2F Zenlex Bldg, M.K. Lina Street, Brgy. 1, Lipa City, Philippines, 4217</p>
+            <p>Contact Number: 0917 103 3345</p>
+            <p>Facebook Page: MAMS INTERNET CAFE</p>
+            <p>Business Hours: 24/7</p>
+
+            <p>
+                Email Address:
+                <a href="mailto:mamsicafe@gmail.com">mamsicafe@gmail.com</a>
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>2026 MAM'S BATTLEGROUND. PLAY GAME, FAIR PLAY</p>
+
+        <section id="authors">
+            <h2>Authors</h2>
+
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            Lead Developer
+                            <p>Marvin Paradila</p>
+                        </td>
+
+                        <td>
+                            Assistant Developer
+                            <p>Harold Falcatan</p>
+                        </td>
+
+                        <td>
+                            Web Designer
+                            <p>Ronan Batanes</p>
+                        </td>
+
+                        <td>
+                            Assistant Developer
+                            <p>Jaypee Malaluan</p>
+                        </td>
+
+                        <td>
+                            Lead Developer
+                            <p>TJ Laguerta</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </footer>
+</body>
+</html>
